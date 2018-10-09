@@ -1,0 +1,311 @@
+/* Setup for HTML and body tags */
+html {
+    height: 100%;
+    box-sizing: border-box;
+  }
+  
+  * {
+    box-sizing: inherit;
+  }
+
+body {
+    position: relative;
+    margin: 0;
+    padding-bottom: 8rem;
+    min-height: 100%;
+    background-color: #3d5164;
+    color: #000;
+    font-family: 'Merriweather', serif;
+}
+
+/* Background settings for body */
+#shards-background {
+    background-image: url("../images/cosmic.jpg"), url("../images/cosmic.jpg");
+    background-position: left top, right top;
+    background-repeat: repeat-y, repeat-y;
+}
+
+/* Login Section and Logo */
+#login-bar {
+    background-color: #c5c5a2;
+}
+
+#logo {
+    height: 300px;
+    width: 300px;
+    float: left;
+}
+
+#align-input {
+    padding-top: 10px;
+    padding-right: 25px;
+}
+
+/* Login and Register Buttons */
+.btn-action {
+    background-color: #FF4500;
+    width: 75px;
+    height: auto;
+}
+
+.btn-action:hover {
+    background-color: #003366;
+    color: #fff;
+}
+
+.btn-register {
+    color: #ff4500;
+    background-color: #c0c0c0;
+    border-color: #ff4500;
+    width: 75px;
+    height: auto;
+}
+
+.btn-register:hover {
+    background-color: #ff4500;
+    color: #000;
+}
+
+/* FontAwesome icon styling */
+.fa, .fas, .far, .fab {
+    color: #FF4500;
+}
+
+.newmember {
+    text-align: right;
+    padding-left: 40px;
+}
+
+/* Styling for video previews */
+#blue-bar {
+    background-color: #003366;
+    height: 197px;
+}
+
+#preview {
+    color: #fff;
+    text-align: center;
+    font-weight: 500;
+    font-family: 'Share Tech', sans-serif;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    padding-top: 13px;
+}
+
+.video-responsive{
+    overflow:hidden;
+    padding-bottom:75%;
+    position:relative;
+    height:0;
+}
+
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+iframe {
+    border: 1px solid #ff4500;
+}
+
+#videoclips {
+    padding-top: 10px;
+}
+
+#vran {
+    border-right: 1px solid #ff4500;
+}
+
+/* Styling for search bar */
+.search {
+    background-color: #c5c5a2;
+}
+
+.search input[type=text] {
+    padding: 6px;
+    margin: 8px 0 8px 60px;
+    font-size: 14px;
+    border: none;
+}
+
+.search .search-container {
+    float: left;
+}
+
+.search .search-container button {
+    background: #ddd;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+}
+
+.search .search-container button:hover {
+    background: #ccc;
+}
+
+/* Navigation styling */
+.background-nav {
+    background-color: #003366;
+}
+
+.nav-link { 
+    color: #fff;
+}
+
+.nav-link:hover {
+    background: #ff4500;
+    color: #000;
+}
+
+.active {
+    background: #ff4400c0;
+    color: #000;
+}
+
+/*  MAIN SECTION */
+.wrapper-main {
+    background-color: #3d5164;
+}
+
+/* Creates a soft vertical line between discussion and chat sections */
+.rightside {
+    border-left: 1px solid #b3b3b3;
+}
+
+/* Welcome Section */
+#welcome, #discussion {
+    background-color: #c0c0c0;
+    border-radius: 5px;
+}
+
+#intro {
+    padding-top: 10px;
+    font-size: 18px;
+}
+
+.fa-users {
+    font-size:  50px;
+    padding-top: 5px;
+    padding-left: 5px;
+    color: #ff4500;
+}
+
+/* Table Styling */
+.thead {
+    background-color: #003366;
+    color: #fff;
+    font-weight: 500;
+    font-family: 'Share Tech', sans-serif;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+}
+
+.titlelinks:hover {
+    color: #ff4500;
+}
+
+.forumtags {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Card placeholder for chat - to be removed when chat is added */
+.card {
+    border: none;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(216, 216, 216);
+    text-align: center;
+}
+
+/* Styling for popular game links under chat */
+.popular {
+    text-align: center;
+    font-weight: 500;
+    font-family: 'Share Tech', sans-serif;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    color: #ff4500;
+    text-shadow: 1px 1px #003366;
+}
+
+.image-link {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 275px;
+    height: 100%;
+}
+
+.image-link:hover {
+    border: 2px solid #ff4500;
+}
+
+.namelabel:hover {
+    color: #ff4500;
+}
+
+.namelabel {
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding-top: 3px;
+}
+
+/* Styling for footer */
+.logofoot {
+    width: auto;
+    height: 175px;
+    padding-left: 75px;
+    padding-top: 10px;
+}
+
+.shading {
+    color: #003366;
+}
+
+.shading:hover {
+    background-color: #ff4500;
+    color: #000;
+}
+
+footer {
+    position: absolute;
+    border-top: 4px solid #000;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    background-color: #c5c5a2;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+#share {
+    color: #ff4500;
+}
+
+#copyright {
+    padding-top: 25px;
+    color: #3d5164;
+}
+     /* social icons */
+
+.social-icons {
+    font-size: 25px;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px 5px;
+}
+  
+.fab:hover {
+    opacity: 0.7;
+    color: #003366;
+}
+  
