@@ -1,0 +1,74 @@
+/* Blog Related Styles */
+.blog-content{
+    background-color:  rgba(255, 255, 255, 0.582);
+  }
+  
+  .blog-container{
+    overflow: auto;
+    background-color: rgb(148, 172, 172);
+    max-width: 200px;
+    max-height: 150px;
+  }
+  
+.blog-frame{
+  background-color: rgb(19, 94, 94);
+  border-color:  rgb(48, 62, 63);
+}
+  
+  .blog1 td{
+    width: 200px;
+  }
+
+  .recent-post{
+    width: 80%;
+  }
+
+  .delete{
+    position: relative;
+    color: rgb(13, 7, 24);
+    background-color: rgb(247, 96, 96);
+    width: 3%;
+    height: 25px;
+    font-size: large;
+    font-size-adjust: initial;
+    text-align: center;
+    float: right;
+    padding:2px;
+  
+  }
+  .edit{
+    position: relative;
+    color: rgb(13, 7, 24);
+    background-color: rgb(130, 243, 115);
+    width: 4%;
+    height: 25px;
+    float: right;
+    text-align: center;
+    padding:2px;
+  }
+  
+  #newblogbtn  {
+    background-color:  rgb(19, 36, 97);
+    color: white;
+    width: 60%;
+    height: 30px;
+    padding: 3px;
+    position: relative;
+  }
+  #newblogsubmitbtn{
+    background-color: rgb(19, 36, 97);
+    color: white;
+    width: 30%;
+    height: 30px;
+    padding: 3px;
+    position: relative;
+  }
+  
+  .card .card-header{
+    background-color: #d9e4f7;
+  }
+
+  .form-group .form-control {
+    width: 100%;
+    float: right;
+}

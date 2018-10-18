@@ -1,11 +1,12 @@
 {
-  "name": "gtproject3-mysql",
+  "name": "TeamProject3",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -13,10 +14,11 @@
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
     "express-session": "^1.15.6",
-    "express-sessions": "^1.0.6",
     "mysql2": "^1.6.1",
-    "passport": "^0.4.0",
+    "passport": "^0.3.2",
     "passport-local": "^1.0.0",
-    "sequelize": "^4.39.0"
-  }
+    "sequelize": "^4.38.0"
+  },
+  "devDependencies": {},
+  "description": ""
 }
