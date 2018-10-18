@@ -1,22 +1,17 @@
-// Requiring bcrypt-nodejs for password hashing. 
-// Using the bcrypt-nodejs version as the regular bcrypt module
+// Requiring bcrypt for password hashing. Using the bcrypt-nodejs version as the regular bcrypt module
 // sometimes causes errors on Windows machines
 var bcrypt = require("bcrypt-nodejs");
-
-// Creating our User model (for password management)
+// Creating our User model
 module.exports = function(sequelize, DataTypes) {
   var User = sequelize.define("User", {
-    // The User First Name cannot be null.
-    fname:{
-      type: DataTypes.STRING, 
+    fname: {
+      type: DataTypes.STRING,
       allowNull: true
     },
-    // The User Last Name cannot be null.
-    lname:{
-      type: DataTypes.STRING, 
+    lname: {
+      type: DataTypes.STRING,
       allowNull: true
     },
-
     // The email cannot be null, and must be a proper email before creation
     email: {
       type: DataTypes.STRING,
@@ -26,31 +21,16 @@ module.exports = function(sequelize, DataTypes) {
         isEmail: true
       }
     },
-
     // The password cannot be null
     password: {
       type: DataTypes.STRING,
       allowNull: false
     },
-
     logged: {
       type: DataTypes.BOOLEAN, 
       defaultValue:false
     },
-    createdAt: {
-      type: DataTypes.DATE
-
-    },
-    updatedAt: {
-      type: DataTypes.DATE 
-
-    }
-  }
-  // , {
-  //   timestamps: true
-  // }
-);
-
+  });
   // Creating a custom method for our User model. This will check if an unhashed password entered by the user can be compared to the hashed password stored in our database
   User.prototype.validPassword = function(password) {
     return bcrypt.compareSync(password, this.password);

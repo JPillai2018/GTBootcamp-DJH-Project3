@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en-US">
 
@@ -15,38 +14,19 @@
     <!-- link to bootstrap cdn & script for bootstrap js -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous" />
-
-    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-         crossorigin="anonymous"></script> -->
-
-    <!-- script for minified jquery -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
-
-    <!-- script for jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-    <!--  Temp-->
-    <!-- Moment.js Reference -->
-    <!-- <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>  -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script> -->
-    <!--  Temp-->
-
-    <!-- link to css -->
-    <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/style.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/styleAuth.css" />
-
-    <!-- link to png image for page tab favicon -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>  
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/styleAuth.css" />
     <link rel="icon" href="http://www.freeiconspng.com/uploads/video-game-controller-icon-33.png" />
-
-    <!-- link to fontawesome icon library & google fonts -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
         crossorigin="anonymous" />
-
     <link href="https://fonts.googleapis.com/css?family=Merriweather|Share+Tech" rel="stylesheet">
-
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/styleAuth.css" rel="stylesheet">
     <style>
     </style>
 </head>
@@ -72,12 +52,12 @@
                                     <form id="signup_form" method="post"  class="signup">
                                         <div class="form-group">
                                             <span>First Name: 
-                                                <input class="form-control" placeholder="First Name" type="text" id="fname">
+                                                <input class="form-control" placeholder="First Name" type="text" id="sfname">
                                             </span>
                                         </div>
                                         <div class="form-group">
                                             <span>Last Name: 
-                                                <input class="form-control" placeholder="Last Name" type="text" id="lname">
+                                                <input class="form-control" placeholder="Last Name" type="text" id="slname">
                                             </span>
                                         </div>                                
                                         <div class="form-group">
@@ -116,7 +96,7 @@
                     <div class="col"> </div>
                     <div class="col"> </div>
                     <div class="col-auto" id="align-input">
-                        <form class="form-inline" id="login_form" >
+                        <form class="form-inline" id="login_form" method="post">
                             <label class="sr-only" for="inlineFormInputGroupUsername2">Username
                             </label>
 
@@ -145,14 +125,14 @@
                             </div>
                             <!-- <button type="submit" class="btn btn-sm mb-2 btn-action" id="loginBtn">Login</button> -->
                             <!-- <button type="button" class="btn btn-sm mb-2 btn-action" id="btnLogin">Login</button> -->
-                            <button type="button" class="btn btn-sm mb-2 btn-action" id="btnLogin">Login</button>
+                            <button type="submit" class="btn btn-sm mb-2 btn-action" id="btnLogin">Login</button>
                             
                         </form> <!-- closes login form -->
 
     <!-- OPTION TO REGISTER -->
                         <div class="newmember">
                             <!-- <p>Not a member? &nbsp; <button type="submit" class="btn btn-sm mb-2 btn-register">Register!</button></p> -->
-                            <p>Not a member? &nbsp; <button type="button" class="btn btn-sm mb-2 btn-register" data-toggle="modal" data-target="#registerModal">Register!</button></p>                            
+                            <p>Not a member? &nbsp; <button type="button" class="btn btn-sm mb-2 btn-register" data-toggle="modal" data-target="#registerModal">Register</button></p>                            
                         </div>
                     </div> <!-- closes col auto -->
                 </div> <!-- closes form-row right -->
@@ -164,21 +144,21 @@
                 <div class="row" id="videoclips">
                     <div class="col-md-4">
                         <div class="video-responsive" id="vran">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/qKpbA2QR1WE?rel=0"
+                            <iframe width="560" height="280" src="https://www.youtube.com/embed/qKpbA2QR1WE?rel=0"
                                 frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
                             </iframe>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="video-responsive" id="gemini">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/KL6GxOZRPOg?rel=0"
+                            <iframe width="560" height="280" src="https://www.youtube.com/embed/KL6GxOZRPOg?rel=0"
                                 frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
                             </iframe>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="video-responsive" id="pillars">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/lsZARCYYxME?rel=0"
+                            <iframe width="560" height="280" src="https://www.youtube.com/embed/lsZARCYYxME?rel=0"
                                 frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
                             </iframe>
                         </div>
@@ -218,7 +198,7 @@
 
 <!-- Main Page Body -->
             <div class="wrapper-main">
-<br />
+            <br />
                 <div class="container-fluid" id="welcome">
                     <div class="row">
                         <div class="col-md-1">
@@ -233,11 +213,11 @@
                         </div>
                     </div>
                 </div>
-<br />
+                <br />
                 <div class="container-fluid" id="discussion">
                     <div class="row" id="main">
 
-        <!-- Left Hand Side [non chat] -->
+                    <!-- Left Hand Side [non chat] -->
                         <div class="col-md-8" id="discussion">
 
                             <table class="table">
@@ -396,7 +376,7 @@
                     <!-- CHAT PLACEHOLDER TO BE REMOVED -->
 
                             <div class="card">
-                                <img class="card-img-top" src="../assets/images/chat.jpg" alt="Card image cap">
+                                <img class="card-img-top" src="assets/images/chat.jpg" alt="Card image cap">
                                 <div class="card-body">
                                     <h5 class="card-title">CHAT</h5>
                                     <p class="card-text">This is the chat window to be added.</p>
@@ -413,22 +393,22 @@
                             <div class="reviews">
                                 <p class="popular">CHECK OUT THESE POPULAR GAMES</p>
                                 <a href="http://larian.com/" target="_blank">
-                                    <img class="image-link" src="../assets/images/gameimage.jpg" />
+                                    <img class="image-link" src="assets/images/gameimage.jpg" />
                                     <p class="namelabel">Divinity: Original Sin 2</p>
                                 </a>
                                 <br />
                                 <a href="https://mojang.com/" target="_blank">
-                                    <img class="image-link" src="../assets/images/gameimage2.jpg" />
+                                    <img class="image-link" src="assets/images/gameimage2.jpg" />
                                     <p class="namelabel">Minecraft</p>
                                 </a>
                                 <br />
                                 <a href="http://braid-game.com/" target="_blank">
-                                    <img class="image-link" src="../assets/images/gameimage3.jpg" />
+                                    <img class="image-link" src="assets/images/gameimage3.jpg" />
                                     <p class="namelabel">Braid</p>
                                 </a>
                                 <br />
                                 <a href="http://http://hypetraindigital.com/the-wild-eight-coming-soon//" target="_blank">
-                                    <img class="image-link" src="../assets/images/gameimage4.jpg" />
+                                    <img class="image-link" src="assets/images/gameimage4.jpg" />
                                     <p class="namelabel">The Wild Eight</p>
                                 </a>
                                 <br />
@@ -444,7 +424,7 @@
 <hr id="line" />
 
 <!-- footer info -->
-        <footer class="footer">
+    <footer class="footer">
             <div class="container">
                 <div class="row">
                     <p class="footer">
@@ -494,445 +474,12 @@
                     </p>
                 </div>
             </div>
-    </div>
+
     </footer>
     <!-- script for javascript-->
-    <script type="text/javascript" src="js/main.js"></script>
+    <!-- <script type="text/javascript" src="js/main.js"></script> -->
+    <script type="text/javascript" src="assets/js/login.js"></script>
+    <script type="text/javascript" src="assets/js/signup.js"></script>
 </div> <!-- closes original container fluid  -->
 </body>
-=======
-<!DOCTYPE html>
-<html lang="en-US">
-
-<head>
-    <!-- metadata -->
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Comet Indie Gaming App" />
-
-    <!-- website title -->
-    <title>Comet: Indie Gaming Forum</title>
-
-    <!-- link to bootstrap cdn & script for bootstrap js -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous" />
-
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
-
-    <!-- script for minified jquery -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
-
-    <!-- link to css -->
-    <link rel="stylesheet" type="text/css" media="screen" href="../public/assets/css/style.css" />
-
-    <!-- link to png image for page tab favicon -->
-    <link rel="icon" href="http://www.freeiconspng.com/uploads/video-game-controller-icon-33.png" />
-
-    <!-- link to fontawesome icon library & google fonts -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-        crossorigin="anonymous" />
-
-    <link href="https://fonts.googleapis.com/css?family=Merriweather|Share+Tech" rel="stylesheet">
-
-</head>
-
-<body id="shards-background">
-    <div class="container-fluid">
-
-<!-- LOGIN SECTION -->
-        <div class="container">
-            <div class="wrapper-fluid" id="login-bar">
-                <div>
-                    <img id="logo" src="assets/images/logo.jpg" />
-                </div>
-
-    <!-- FORM FOR LOGIN -->
-                <div class="form-row align-items-right">
-                    <div class="col"> </div>
-                    <div class="col"> </div>
-                    <div class="col-auto" id="align-input">
-                        <form class="form-inline">
-
-                            <label class="sr-only" for="inlineFormInputGroupUsername2">Username
-                            </label>
-
-                            <div class="input-group mb-2 mr-sm-2">
-                                <span class="fa fa-user">
-                                    <input type="text" class="form-control form-control-sm" id="inlineFormInputGroupUsername2"
-                                        placeholder="Username" />
-                                </span>
-                            </div>
-
-                            <label class="sr-only" for="inlineFormInputGroupPassword2">Password
-                            </label>
-                            
-                            <div class="input-group mb-2 mr-sm-2">
-                                <span class="fas fa-lock">
-                                    <input type="text" class="form-control form-control-sm" id="inlineFormInputGroupPassword2"
-                                        placeholder="Password" />
-                                </span>
-                            </div>
-
-                            <div class="form-check mb-2 mr-sm-2">
-                                <input class="form-check-input" type="checkbox" id="inlineFormCheck" />
-                                <label class="form-check-label" for="inlineFormCheck">
-                                    Remember me
-                                </label>
-                            </div>
-
-                            <button type="submit" class="btn btn-sm mb-2 btn-action">Login</button>
-                        </form> <!-- closes login form -->
-
-    <!-- OPTION TO REGISTER -->
-                        <div class="newmember">
-                            <p>Not a member? &nbsp; <button type="submit" class="btn btn-sm mb-2 btn-register">Register!</button></p>
-                        </div>
-                    </div> <!-- closes col auto -->
-                </div> <!-- closes form-row right -->
-            </div> <!-- closes wrapper fluid -->
-   
-<!-- LOGO -->
-            <div id="blue-bar">
-                <p id="preview">PREVIEW SOME OF THE HOTTEST CONSOLE AND PC INDIE GAMES OF 2018!</p>
-                <div class="row" id="videoclips">
-                    <div class="col-md-4">
-                        <div class="video-responsive" id="vran">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/qKpbA2QR1WE?rel=0"
-                                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-                            </iframe>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="video-responsive" id="gemini">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/KL6GxOZRPOg?rel=0"
-                                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-                            </iframe>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="video-responsive" id="pillars">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/lsZARCYYxME?rel=0"
-                                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-                            </iframe>
-                        </div>
-                    </div>
-                </div> <!-- closes videoclips row -->
-
-            </div> <!-- closes blue-bar -->
-<!-- Search Bar -->
-            <div class="search search-container">
-                <form action="/action_page.php">
-                    <input type="text" placeholder="Search.." name="search" />
-                    <button type="submit"><i class="fa fa-search"></i></button>
-                </form>
-            </div>
-
-<!-- Navigatation -->
-            <div class="containter-fluid background-nav">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="navigation">
-                            <nav class="nav justify-content-center">
-                                <a class="nav-link active" href="#">Home</a>
-                                <a class="nav-link" href="#">Playstation</a>
-                                <a class="nav-link" href="#">XBox</a>
-                                <a class="nav-link" href="#">Nintendo</a>
-                                <a class="nav-link" href="#">PC/Mac</a>
-                                <a class="nav-link" href="#">News</a>
-                                <a class="nav-link" href="#">Reviews</a>
-                                <a class="nav-link" href="#">Rules</a>
-                                <a class="nav-link" href="#">FAQ</a>
-                                <a class="nav-link" href="#">Archives</a>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </div> <!-- closes background-nav -->
-
-<!-- Main Page Body -->
-            <div class="wrapper-main">
-<br />
-                <div class="container-fluid" id="welcome">
-                    <div class="row">
-                        <div class="col-md-1">
-                            <span class="fa fa-users"></span>
-                        </div>
-                        <div class="col-md-11">
-                            <p id="intro">Welcome to Comet, the Indie Gaming Forum! If this is your first visit, please
-                                be sure to
-                                check out the FAQ by clicking the link above. You have to be registered in order to
-                                post or
-                                comment in the forums. And, it's FREE!</p>
-                        </div>
-                    </div>
-                </div>
-<br />
-                <div class="container-fluid" id="discussion">
-                    <div class="row" id="main">
-
-        <!-- Left Hand Side [non chat] -->
-                        <div class="col-md-8" id="discussion">
-
-                            <table class="table">
-                                <thead class="thead">
-                                    <tr>
-                                        <th scope="col" style="width: 50%"><span class="far fa-comments"></span>&nbsp;
-                                            DISCUSSIONS</th>
-                                        <th scope="col" style="width: 15%">TOPICS</th>
-                                        <th scope="col" style="width: 15%">POSTS</th>
-                                        <th scope="col" style="width: 20%">LATEST POST</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <th scope="row">
-                                            <h5><span class="fab fa-playstation"></span>&nbsp; <a href="#" target="_blank"
-                                                    class="titlelinks">Indie Gaming on Playstation</a></h5>
-                                            <p class="forumtags">Are you a big Playstation fan? Then this is the
-                                                discussion for you! Share and comment about Indie games available for
-                                                PS consoles.</p>
-                                        </th>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">
-                                            <h5><span class="fab fa-xbox"></span>&nbsp; <a href="#" target="_blank"
-                                                    class="titlelinks">Indie Gaming on Xbox</a></h5>
-                                            <p class="forumtags">Are you more of an Xbox fan? Then drop in here to chat
-                                                about all things Xbox and Indie games available for the Xbox consoles.</p>
-                                        </th>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">
-                                            <h5><span class="fas fa-desktop"></span>&nbsp; <a href="#" target="_blank"
-                                                    class="titlelinks">Indie Gaming on PC</a></h5>
-                                            <p class="forumtags">Not a real console fan? Prefer your gaming on a PC or
-                                                Mac? Then check out this discussion for Indie games that can be played
-                                                on your PC or Mac.</p>
-                                        </th>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">
-                                            <h5><span class="fab fa-nintendo-switch"></span>&nbsp; <a href="#" target="_blank"
-                                                    class="titlelinks">Indie Gaming on Nintendo</a></h5>
-                                            <p class="forumtags">For those fans of Nintendo’s Switch or Wii, this is
-                                                your home! Check out the discussions for Indie games built for the
-                                                Nintendo systems.</p>
-                                        </th>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">
-                                            <h5><span class="far fa-newspaper"></span>&nbsp; <a href="#" target="_blank"
-                                                    class="titlelinks">Indie Gaming News</a></h5>
-                                            <p class="forumtags">Check out this discussion for official news,
-                                                announcements and game releases.</p>
-                                        </th>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">
-                                            <h5><span class="fas fa-clipboard-list"></span>&nbsp; <a href="#" target="_blank"
-                                                    class="titlelinks">Indie Games Reviews</a></h5>
-                                            <p class="forumtags">Want to see what other members think about their Indie
-                                                game? Would you like to share a review of an Indie game you’ve played?
-                                                Then head over to check out the reviews.</p>
-                                        </th>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-
-                            <table class="table">
-                                <thead class="thead">
-                                    <tr>
-                                        <th scope="col" style="width: 50%"><span class="fas fa-bullhorn"></span>&nbsp;
-                                            RULES AND QUESTIONS</th>
-                                        <th scope="col" style="width: 15%">TOPICS</th>
-                                        <th scope="col" style="width: 15%">POSTS</th>
-                                        <th scope="col" style="width: 20%">LATEST POST</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <th scope="row">
-                                            <h5><span class="fas fa-gavel"></span>&nbsp; <a href="#" target="_blank"
-                                                    class="titlelinks">Community Standards</a></h5>
-                                            <p class="forumtags">We have to have rules to make this site safe and
-                                                enjoyable for everyone. There are only a few rules, but we need
-                                                everyone to follow our community standards.</p>
-                                        </th>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">
-                                            <h5><span class="fas fa-question"></span>&nbsp; <a href="#" target="_blank"
-                                                    class="titlelinks">FAQs</a></h5>
-                                            <p class="forumtags">Have questions? Before contacting us, please check out
-                                                these FAQs as you might find the answer to your question here.</p>
-                                        </th>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-
-                            <table class="table">
-                                <thead class="thead">
-                                    <tr>
-                                        <th scope="col" style="width: 50%"><span class="fas fa-file-archive"></span>&nbsp;
-                                            ARCHIVES</th>
-                                        <th scope="col" style="width: 15%">TOPICS</th>
-                                        <th scope="col" style="width: 15%">POSTS</th>
-                                        <th scope="col" style="width: 20%">LATEST POST</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-
-                                    <tr>
-                                        <th scope="row">
-                                            <h5><span class="fas fa-archive"></span>&nbsp; <a href="#" target="_blank"
-                                                    class="titlelinks">Old Posts</a></h5>
-                                            <p class="forumtags">Looking for something from the past? Want to see old
-                                                posts about Indie games that might have been archived? Then head over
-                                                to check out our dusty files.</p>
-                                        </th>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div> <!-- closes this left column -->
-
-        <!-- Right Hand Side [chat] -->
-
-                        <div class="col-md-4 rightside">
-
-                    <!-- CHAT PLACEHOLDER TO BE REMOVED -->
-
-                            <div class="card">
-                                <img class="card-img-top" src="../public/assets/images/chat.jpg" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">CHAT</h5>
-                                    <p class="card-text">This is the chat window to be added.</p>
-                                    <p class="card-text">This window can be increased in size as needed.</p>
-                                    <p class="card-text">This chat section will be updated.</p>
-                                    <p class="card-text"><small class="text-muted">This is just a placeholder until the
-                                            back end chat code is ready for import.</small></p>
-                                </div>
-                            </div>
-
-                    <!-- END CHAT PLACEHOLDER THAT NEEDS TO BE REMOVED -->
-
-<br /><br />
-                            <div class="reviews">
-                                <p class="popular">CHECK OUT THESE POPULAR GAMES</p>
-                                <a href="http://larian.com/" target="_blank">
-                                    <img class="image-link" src="../public/assets/images/gameimage.jpg" />
-                                    <p class="namelabel">Divinity: Original Sin 2</p>
-                                </a>
-                                <br />
-                                <a href="https://mojang.com/" target="_blank">
-                                    <img class="image-link" src="../public/assets/images/gameimage2.jpg" />
-                                    <p class="namelabel">Minecraft</p>
-                                </a>
-                                <br />
-                                <a href="http://braid-game.com/" target="_blank">
-                                    <img class="image-link" src="../public/assets/images/gameimage3.jpg" />
-                                    <p class="namelabel">Braid</p>
-                                </a>
-                                <br />
-                                <a href="http://http://hypetraindigital.com/the-wild-eight-coming-soon//" target="_blank">
-                                    <img class="image-link" src="../public/assets/images/gameimage4.jpg" />
-                                    <p class="namelabel">The Wild Eight</p>
-                                </a>
-                                <br />
-                            </div> <!-- closes reviews -->
-                        </div> <!-- closes right column -->
-
-
-
-                    </div><!-- closes main row -->
-                </div> <!-- closes container discussion -->
-            </div> <!-- closes wrapper-main -->
-<br />
-<hr id="line" />
-
-<!-- footer info -->
-        <footer class="footer">
-            <div class="container">
-                <div class="row">
-                    <p class="footer">
-                        <div class="col-md-2">
-                            <img class="logofoot" src="assets/images/logofoot.png" />
-                        </div>
-                        <div class="col-md-10 footinfo">
-                            <br />
-                            <a class="shading" href="#">About Us</a>
-                            &nbsp;|&nbsp;
-                            <a class="shading" href="#" target="_blank">Advertise</a>
-                            &nbsp;|&nbsp;
-                            <a class="shading" href="#">Terms of Use</a>
-                            &nbsp;|&nbsp;
-                            <a class="shading" href="#" target="_blank">Privacy</a>
-                            &nbsp;|&nbsp;
-                            <a class="shading" href="#">Contact Us</a>
-
-                            <br /><br />
-
-                            <!-- font awesome social button icons -->
-                            <p id="share">SHARE THIS PAGE<br />
-                                <span class="social-icons">
-                                    <a href="#" target="_blank" class="fab fa-facebook">
-                                    </a>
-                                </span>
-                                <span class="social-icons">
-                                    <a href="#" target="_blank" class="fab fa-twitter">
-                                    </a>
-                                </span>
-                                <span class="social-icons">
-                                    <a href="#" target="_blank" class="fab fa-reddit">
-                                    </a>
-                                </span>
-                                <span class="social-icons">
-                                    <a href="#" target="_blank" class="fab fa-pinterest">
-                                    </a>
-                                </span>
-                                <span class="social-icons">
-                                    <a href="#" target="_blank" class="fab fa-instagram">
-                                    </a>
-                                </span></p>
-
-                            <span id="copyright">Copyright &#169; 2018</span>
-
-                            <br />
-                    </p>
-                </div>
-            </div>
-    </div>
-    </footer>
-</div> <!-- closes original container fluid  -->
-</body>
-
 </html>

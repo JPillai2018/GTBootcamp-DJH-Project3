@@ -1,8 +1,12 @@
+
+
+
 .modal{
   position: absolute;
   top:0%;
-  opacity: 10%;
+  opacity: 1.8;
   border-radius: 20px;
+
 }
 .modal-title{
   width: 100%;
@@ -12,6 +16,7 @@
 .modal-dialog{
   width: 80%;
   border-radius: 20px;
+  background-color: rgb(15, 15, 88);
 } 
 .modal-content{
   background-color: rgb(230, 236, 248);
