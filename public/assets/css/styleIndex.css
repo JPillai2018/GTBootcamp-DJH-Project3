@@ -1,0 +1,20 @@
+form.signup,
+form.login {
+  margin-top: 50px;
+}
+
+body{
+  background-color: rgb(187, 184, 160);
+  color: rgb(78, 38, 143);
+  font-weight: 600;
+}
+
+#myModal{
+  background-color: hsl(hue, saturation, lightness);
+}
+
+.jumbotron{
+  background-color: blueviolet;
+  color: white;
+  text-align: center;
+}

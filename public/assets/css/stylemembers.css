@@ -1,0 +1,30 @@
+form.signup,
+form.login {
+  margin-top: 50px;
+}
+
+#myModal{
+  background-color: hsl(hue, saturation, lightness);
+}
+
+.form-row{
+  color: #ff4500;
+}
+
+.member-name{
+  color: #ff4500;
+}
+
+#btnLogout {
+  background-color: #003366;
+  color: #fff;
+}
+
+#btnLogout:hover {
+  background-color: #ff4500;
+}
+
+#welmem {
+  margin-bottom: 25px;
+  padding-left: 10px;
+}

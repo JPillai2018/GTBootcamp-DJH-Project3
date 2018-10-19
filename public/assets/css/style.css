@@ -16,13 +16,14 @@ body {
     background-color: #3d5164;
     color: #000;
     font-family: 'Merriweather', serif;
+    padding-top: 6px;
 }
 
 /* Background settings for body */
 #shards-background {
     background-image: url("../images/cosmic.jpg"), url("../images/cosmic.jpg");
     background-position: left top, right top;
-    background-repeat: repeat-y, repeat-y;
+    background-repeat: repeat, repeat;
 }
 
 /* Login Section and Logo */
@@ -34,6 +35,12 @@ body {
     height: 300px;
     width: 300px;
     float: left;
+}
+
+#logomembers {
+  height: 298px;
+  width: 305px;
+  float: left;
 }
 
 #align-input {
@@ -92,32 +99,15 @@ body {
     padding-top: 13px;
 }
 
-.video-responsive{
-    overflow:hidden;
-    padding-bottom:75%;
-    position:relative;
-    height:0;
+.preview-link {
+  border: 1px solid #c5c5a2;
 }
 
-.video-responsive iframe{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
+.preview-link:hover {
+  border: 2px solid #ff4500;
 }
 
-iframe {
-    border: 1px solid #ff4500;
-}
 
-#videoclips {
-    padding-top: 10px;
-}
-
-#vran {
-    border-right: 1px solid #ff4500;
-}
 
 /* Styling for search bar */
 .search {
@@ -175,6 +165,10 @@ iframe {
     border-left: 1px solid #b3b3b3;
 }
 
+#fakechat {
+  width: 212px;
+}
+
 /* Welcome Section */
 #welcome, #discussion {
     background-color: #c0c0c0;
@@ -186,11 +180,16 @@ iframe {
     font-size: 18px;
 }
 
-.fa-users {
+.fa-users, .fa-user-check {
     font-size:  50px;
-    padding-top: 5px;
+    padding-top: 12px;
     padding-left: 5px;
     color: #ff4500;
+}
+
+.fa-thumbs-up, .fa-thumbs-down {
+  font-size:  25px;
+  color: #ff4500;
 }
 
 /* Table Styling */

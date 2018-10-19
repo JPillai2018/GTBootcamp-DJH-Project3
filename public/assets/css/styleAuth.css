@@ -1,0 +1,33 @@
+
+
+
+.modal{
+  position: absolute;
+  top:0%;
+  opacity: 1.8;
+  border-radius: 20px;
+
+}
+.modal-title{
+  width: 100%;
+  text-align: center;
+  font-size: xx-large;
+}
+.modal-dialog{
+  width: 80%;
+  border-radius: 20px;
+  background-color: rgb(15, 15, 88);
+} 
+.modal-content{
+  background-color: rgb(230, 236, 248);
+  opacity: 0%;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.form-group .form-control{
+  width: 70%;
+  float: right;
+} 
+.close{
+  color: #FF4500;
+}
