@@ -134,7 +134,6 @@
                                 you are here. We'd love to know what you think of our forum. Click to let us know how
                                 you feel about our site:&nbsp; &nbsp;
                                 <span id="like_button_container" class="far fa-thumbs-up"></span> &nbsp; &nbsp;
-                                <span id="dislike_button_container" class="far fa-thumbs-down"></span>
                             </p>
                         </div>
                         <!-- REACT SECTION ENDS -->
@@ -463,6 +462,15 @@
             <link rel="stylesheet" type="text/css" media="screen" href="assets/css/styleAuth.css" />
             <link rel="stylesheet" type="text/css" media="screen" href="assets/css/stylemembers.css" />
             <link rel="stylesheet" type="text/css" media="screen" href="assets/css/styleBlog.css" />
+
+            <!-- Load React. -->
+            <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+            <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+            <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+
+            <!-- Load our React component. -->
+            <script src="like_button.js"></script>
+            
         </div> <!-- closes original container fluid  -->
 </body>
 
