@@ -3,26 +3,28 @@ form.login {
   margin-top: 50px;
 }
 
-body{
-  background-color: rgb(187, 184, 160);
-  color: rgb(78, 38, 143);
-  font-weight: 600;
-}
-
 #myModal{
   background-color: hsl(hue, saturation, lightness);
 }
 
-.jumbotron{
-  background-color: blueviolet;
-  color: white;
-  text-align: center;
-}
-
 .form-row{
-  color: red;
+  color: #ff4500;
 }
 
 .member-name{
-  color: red;
+  color: #ff4500;
+}
+
+#btnLogout {
+  background-color: #003366;
+  color: #fff;
+}
+
+#btnLogout:hover {
+  background-color: #ff4500;
+}
+
+#welmem {
+  margin-bottom: 25px;
+  padding-left: 10px;
 }

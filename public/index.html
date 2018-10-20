@@ -18,7 +18,7 @@
         crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>  
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/styleAuth.css" />
     <link rel="icon" href="http://www.freeiconspng.com/uploads/video-game-controller-icon-33.png" />
@@ -33,65 +33,66 @@
 
 <body id="shards-background">
     <div class="container-fluid">
-<!-- LOGIN MODAL SECTION BEGINS-->
+        <!-- LOGIN MODAL SECTION BEGINS-->
         <div class="container">
             <div class="row">
                 <div class="col-xs-6">
-                    <div class="modal fade-class " data-keyboard="false" data-backdrop="static" id="registerModal" tabindex="-1">
+                    <div class="modal fade-class " data-keyboard="false" data-backdrop="static" id="registerModal"
+                        tabindex="-1">
                         <div class="modal-dialog modal-lg">
                             <div class="modal-content">
 
                                 <div class="modal-header">
                                     <div class="input-group mb-2 mr-sm-2 modal-title">
-                                        <span class="fa fa-user">  Registration
+                                        <span class="fa fa-user"> Registration
                                         </span>
                                     </div>
                                     <button class="close" data-dismiss="modal">&times;</button>
                                 </div>
                                 <div class="modal-body">
-                                    <form id="signup_form" method="post"  class="signup">
+                                    <form id="signup_form" method="post" class="signup">
                                         <div class="form-group">
-                                            <span>First Name: 
+                                            <span>First Name:
                                                 <input class="form-control" placeholder="First Name" type="text" id="sfname">
                                             </span>
                                         </div>
                                         <div class="form-group">
-                                            <span>Last Name: 
+                                            <span>Last Name:
                                                 <input class="form-control" placeholder="Last Name" type="text" id="slname">
                                             </span>
-                                        </div>                                
+                                        </div>
                                         <div class="form-group">
-                                            <span>Email: 
+                                            <span>Email:
                                                 <input class="form-control" placeholder="Login Email" type="text" id="semail">
                                             </span>
-                                        </div>                                
+                                        </div>
                                         <div class="form-group">
                                             <label for="inputRegisterUserName">Password</label>
                                             <input class="form-control" placeholder="Login Password" type="password" id="spassword">
                                         </div>
                                         <br>
 
-                                        <button class="btn btn-sm mb-2 btn-register">Register</button>                                        
+                                        <button class="btn btn-sm mb-2 btn-register">Register</button>
                                         <button class="btn btn-sm mb-2 btn-register" data-dismiss="modal">Close</button>
-                                        <label type="text" id="signupmsg" name="lsmsg" value=""></label>                                
-                                    </div>
+                                        <label type="text" id="signupmsg" name="lsmsg" value=""></label>
+                                </div>
                                 </form>
                             </div>
                         </div>
                     </div>
-                </div>                            
+                </div>
             </div>
         </div>
-<!-- LOGIN MODAL SECTION ENDS-->
+        <!-- LOGIN MODAL SECTION ENDS-->
 
-<!-- LOGIN SECTION -->
+        <!-- LOGIN SECTION -->
         <div class="container">
             <div class="wrapper-fluid" id="login-bar">
                 <div>
                     <img id="logo" src="assets/images/logo.jpg" />
                 </div>
 
-    <!-- FORM FOR LOGIN -->
+                <!-- FORM FOR LOGIN -->
                 <div class="form-row align-items-right">
                     <div class="col"> </div>
                     <div class="col"> </div>
@@ -109,7 +110,7 @@
 
                             <label class="sr-only" for="inlineFormInputGroupPassword2">Password
                             </label>
-                            
+
                             <div class="input-group mb-2 mr-sm-2">
                                 <span class="fas fa-lock">
                                     <input type="password" class="form-control form-control-sm" id="inlineFormInputGroupPassword2"
@@ -126,47 +127,42 @@
                             <!-- <button type="submit" class="btn btn-sm mb-2 btn-action" id="loginBtn">Login</button> -->
                             <!-- <button type="button" class="btn btn-sm mb-2 btn-action" id="btnLogin">Login</button> -->
                             <button type="submit" class="btn btn-sm mb-2 btn-action" id="btnLogin">Login</button>
-                            
+
                         </form> <!-- closes login form -->
 
-    <!-- OPTION TO REGISTER -->
+                        <!-- OPTION TO REGISTER -->
                         <div class="newmember">
                             <!-- <p>Not a member? &nbsp; <button type="submit" class="btn btn-sm mb-2 btn-register">Register!</button></p> -->
-                            <p>Not a member? &nbsp; <button type="button" class="btn btn-sm mb-2 btn-register" data-toggle="modal" data-target="#registerModal">Register</button></p>                            
+                            <p>Not a member? &nbsp; <button type="button" class="btn btn-sm mb-2 btn-register"
+                                    data-toggle="modal" data-target="#registerModal">Register!</button></p>
                         </div>
                     </div> <!-- closes col auto -->
                 </div> <!-- closes form-row right -->
             </div> <!-- closes wrapper fluid -->
-   
-<!-- LOGO -->
+
+            <!-- LOGO -->
             <div id="blue-bar">
                 <p id="preview">PREVIEW SOME OF THE HOTTEST CONSOLE AND PC INDIE GAMES OF 2018!</p>
                 <div class="row" id="videoclips">
                     <div class="col-md-4">
-                        <div class="video-responsive" id="vran">
-                            <iframe width="560" height="280" src="https://www.youtube.com/embed/qKpbA2QR1WE?rel=0"
-                                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-                            </iframe>
-                        </div>
+                        <a href="https://youtu.be/qKpbA2QR1WE" target="_blank">
+                            <img class="preview-link" src="assets/images/vran.jpg" />
+                        </a>
                     </div>
                     <div class="col-md-4">
-                        <div class="video-responsive" id="gemini">
-                            <iframe width="560" height="280" src="https://www.youtube.com/embed/KL6GxOZRPOg?rel=0"
-                                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-                            </iframe>
-                        </div>
+                        <a href="https://youtu.be/KL6GxOZRPOg" target="_blank">
+                            <img class="preview-link" src="assets/images/gemini.jpg" />
+                        </a>
                     </div>
                     <div class="col-md-4">
-                        <div class="video-responsive" id="pillars">
-                            <iframe width="560" height="280" src="https://www.youtube.com/embed/lsZARCYYxME?rel=0"
-                                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-                            </iframe>
-                        </div>
+                        <a href="https://youtu.be/lsZARCYYxME" target="_blank">
+                            <img class="preview-link" src="assets/images/pillars.jpg" />
+                        </a>
                     </div>
                 </div> <!-- closes videoclips row -->
 
             </div> <!-- closes blue-bar -->
-<!-- Search Bar -->
+            <!-- Search Bar -->
             <div class="search search-container">
                 <form action="/action_page.php">
                     <input type="text" placeholder="Search.." name="search" />
@@ -174,13 +170,13 @@
                 </form>
             </div>
 
-<!-- Navigatation -->
+            <!-- Navigatation -->
             <div class="containter-fluid background-nav">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="navigation">
                             <nav class="nav justify-content-center">
-                                <a class="nav-link active" href="#">Home</a>
+                                <a class="nav-link" href="#">Home</a>
                                 <a class="nav-link" href="#">Playstation</a>
                                 <a class="nav-link" href="#">XBox</a>
                                 <a class="nav-link" href="#">Nintendo</a>
@@ -196,9 +192,9 @@
                 </div>
             </div> <!-- closes background-nav -->
 
-<!-- Main Page Body -->
+            <!-- Main Page Body -->
             <div class="wrapper-main">
-            <br />
+                <br />
                 <div class="container-fluid" id="welcome">
                     <div class="row">
                         <div class="col-md-1">
@@ -208,8 +204,8 @@
                             <p id="intro">Welcome to Comet, the Indie Gaming Forum! If this is your first visit, please
                                 be sure to
                                 check out the FAQ by clicking the link above. You have to be registered in order to
-                                post or
-                                comment in the forums. And, it's FREE!</p>
+                                chat or
+                                post in the forums. And, it's FREE!</p>
                         </div>
                     </div>
                 </div>
@@ -217,7 +213,7 @@
                 <div class="container-fluid" id="discussion">
                     <div class="row" id="main">
 
-                    <!-- Left Hand Side [non chat] -->
+                        <!-- Left Hand Side [non chat] -->
                         <div class="col-md-8" id="discussion">
 
                             <table class="table">
@@ -369,27 +365,26 @@
                             </table>
                         </div> <!-- closes this left column -->
 
-        <!-- Right Hand Side [chat] -->
+                        <!-- Right Hand Side [chat] -->
 
                         <div class="col-md-4 rightside">
 
-                    <!-- CHAT PLACEHOLDER TO BE REMOVED -->
+                            <!-- CHAT PLACEHOLDER TO BE REMOVED -->
 
                             <div class="card">
                                 <img class="card-img-top" src="assets/images/chat.jpg" alt="Card image cap">
                                 <div class="card-body">
                                     <h5 class="card-title">CHAT</h5>
-                                    <p class="card-text">This is the chat window to be added.</p>
-                                    <p class="card-text">This window can be increased in size as needed.</p>
-                                    <p class="card-text">This chat section will be updated.</p>
-                                    <p class="card-text"><small class="text-muted">This is just a placeholder until the
-                                            back end chat code is ready for import.</small></p>
+                                    <p class="card-text">You must be <br />registered and logged in <br />to use this
+                                        feature.</p>
+                                    <p class="card-text">Please register and login.</p>
+                                    <img id="fakechat" src="assets/images/chat.png" />
                                 </div>
                             </div>
 
-                    <!-- END CHAT PLACEHOLDER THAT NEEDS TO BE REMOVED -->
+                            <!-- END CHAT PLACEHOLDER THAT NEEDS TO BE REMOVED -->
 
-<br /><br />
+                            <br /><br />
                             <div class="reviews">
                                 <p class="popular">CHECK OUT THESE POPULAR GAMES</p>
                                 <a href="http://larian.com/" target="_blank">
@@ -407,7 +402,7 @@
                                     <p class="namelabel">Braid</p>
                                 </a>
                                 <br />
-                                <a href="http://http://hypetraindigital.com/the-wild-eight-coming-soon//" target="_blank">
+                                <a href="http://hypetraindigital.com/the-wild-eight-coming-soon/" target="_blank">
                                     <img class="image-link" src="assets/images/gameimage4.jpg" />
                                     <p class="namelabel">The Wild Eight</p>
                                 </a>
@@ -420,66 +415,67 @@
                     </div><!-- closes main row -->
                 </div> <!-- closes container discussion -->
             </div> <!-- closes wrapper-main -->
-<br />
-<hr id="line" />
+            <br />
+            <hr id="line" />
 
-<!-- footer info -->
-    <footer class="footer">
-            <div class="container">
-                <div class="row">
-                    <p class="footer">
-                        <div class="col-md-2">
-                            <img class="logofoot" src="assets/images/logofoot.png" />
-                        </div>
-                        <div class="col-md-10 footinfo">
-                            <br />
-                            <a class="shading" href="#">About Us</a>
-                            &nbsp;|&nbsp;
-                            <a class="shading" href="#" target="_blank">Advertise</a>
-                            &nbsp;|&nbsp;
-                            <a class="shading" href="#">Terms of Use</a>
-                            &nbsp;|&nbsp;
-                            <a class="shading" href="#" target="_blank">Privacy</a>
-                            &nbsp;|&nbsp;
-                            <a class="shading" href="#">Contact Us</a>
+            <!-- footer info -->
+            <footer class="footer">
+                <div class="container">
+                    <div class="row">
+                        <p class="footer">
+                            <div class="col-md-2">
+                                <img class="logofoot" src="assets/images/logofoot.png" />
+                            </div>
+                            <div class="col-md-10 footinfo">
+                                <br />
+                                <a class="shading" href="#">About Us</a>
+                                &nbsp;|&nbsp;
+                                <a class="shading" href="#" target="_blank">Advertise</a>
+                                &nbsp;|&nbsp;
+                                <a class="shading" href="#">Terms of Use</a>
+                                &nbsp;|&nbsp;
+                                <a class="shading" href="#" target="_blank">Privacy</a>
+                                &nbsp;|&nbsp;
+                                <a class="shading" href="#">Contact Us</a>
 
-                            <br /><br />
+                                <br /><br />
 
-                            <!-- font awesome social button icons -->
-                            <p id="share">SHARE THIS PAGE<br />
-                                <span class="social-icons">
-                                    <a href="#" target="_blank" class="fab fa-facebook">
-                                    </a>
-                                </span>
-                                <span class="social-icons">
-                                    <a href="#" target="_blank" class="fab fa-twitter">
-                                    </a>
-                                </span>
-                                <span class="social-icons">
-                                    <a href="#" target="_blank" class="fab fa-reddit">
-                                    </a>
-                                </span>
-                                <span class="social-icons">
-                                    <a href="#" target="_blank" class="fab fa-pinterest">
-                                    </a>
-                                </span>
-                                <span class="social-icons">
-                                    <a href="#" target="_blank" class="fab fa-instagram">
-                                    </a>
-                                </span></p>
+                                <!-- font awesome social button icons -->
+                                <p id="share">SHARE THIS PAGE<br />
+                                    <span class="social-icons">
+                                        <a href="#" target="_blank" class="fab fa-facebook">
+                                        </a>
+                                    </span>
+                                    <span class="social-icons">
+                                        <a href="#" target="_blank" class="fab fa-twitter">
+                                        </a>
+                                    </span>
+                                    <span class="social-icons">
+                                        <a href="#" target="_blank" class="fab fa-reddit">
+                                        </a>
+                                    </span>
+                                    <span class="social-icons">
+                                        <a href="#" target="_blank" class="fab fa-pinterest">
+                                        </a>
+                                    </span>
+                                    <span class="social-icons">
+                                        <a href="#" target="_blank" class="fab fa-instagram">
+                                        </a>
+                                    </span></p>
 
-                            <span id="copyright">Copyright &#169; 2018</span>
+                                <span id="copyright">Copyright &#169; 2018</span>
 
-                            <br />
-                    </p>
+                                <br />
+                        </p>
+                    </div>
                 </div>
-            </div>
 
-    </footer>
-    <!-- script for javascript-->
-    <!-- <script type="text/javascript" src="js/main.js"></script> -->
-    <script type="text/javascript" src="assets/js/login.js"></script>
-    <script type="text/javascript" src="assets/js/signup.js"></script>
-</div> <!-- closes original container fluid  -->
+            </footer>
+            <!-- script for javascript-->
+            <!-- <script type="text/javascript" src="js/main.js"></script> -->
+            <script type="text/javascript" src="assets/js/login.js"></script>
+            <script type="text/javascript" src="assets/js/signup.js"></script>
+        </div> <!-- closes original container fluid  -->
 </body>
+
 </html>
