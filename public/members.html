@@ -9,38 +9,44 @@
     <meta name="description" content="Comet Indie Gaming App" />
 
     <!-- website title -->
-    
     <title>Comet: Indie Gaming Forum</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-        <!-- <link rel="stylesheet" type="text/css" media="screen" href="../css/style2.css" /> -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
-            crossorigin="anonymous" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
-    <style>
-    </style>
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="../css/style2.css" /> -->
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+    <link rel="icon" href="http://www.freeiconspng.com/uploads/video-game-controller-icon-33.png" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Share+Tech" rel="stylesheet">
+
+
 </head>
 
 <body id="shards-background">
     <div class="container-fluid">
 
-<!-- LOGIN SECTION -->
+        <!-- LOGIN SECTION -->
         <div class="container">
             <div class="wrapper-fluid" id="login-bar">
                 <div>
-                    <img id="logo" src="assets/images/logo.jpg" />
+                    <img id="logomembers" src="assets/images/logo.jpg" />
                 </div>
 
                 <div class="form-row align-items-right">
                     <div class="col">
-                        <h4>Welcome <span id ="mem-name" class="member-name"></span></h4>
+                        <br /><br />
+                        <h4 id="welmem">Welcome <span class="member-name"></span></h4>
                     </div>
-                    <div class="col"> 
+                    <div class="col">
                         <div class="col-md-8  block">
 
                         </div>
@@ -50,32 +56,54 @@
                             <div class="row">
                                 <form method="get" action="/logout">
                                     <button type="submit" class="btn btn-sm mb-2 btn-action" id="btnLogout">Logout</button>
-                                    <i class="fa fa-sign-out" style="font-size:26px; padding:5px;color:red;"></i>
                                 </form>
                             </div>
                         </div>
-                    </div>  
-                </div>  
+                    </div>
+                </div>
             </div> <!-- closes wrapper fluid -->
-   
-<!-- LOGO -->
+
+
+
+            <!-- LOGO -->
+
             <div id="blue-bar">
+                <p id="preview">PREVIEW SOME OF THE HOTTEST CONSOLE AND PC INDIE GAMES OF 2018!</p>
+                <div class="row" id="videoclips">
+                    <div class="col-md-4">
+                        <a href="https://youtu.be/qKpbA2QR1WE" target="_blank">
+                            <img class="preview-link" src="assets/images/vran.jpg" />
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="https://youtu.be/KL6GxOZRPOg" target="_blank">
+                            <img class="preview-link" src="assets/images/gemini.jpg" />
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="https://youtu.be/lsZARCYYxME" target="_blank">
+                            <img class="preview-link" src="assets/images/pillars.jpg" />
+                        </a>
+                    </div>
+                </div> <!-- closes videoclips row -->
+
             </div> <!-- closes blue-bar -->
-<!-- Search Bar -->
-            <!-- <div class="search search-container">
-                <form action="/">
+
+            <!-- Search Bar -->
+            <div class="search search-container">
+                <form action="/action_page.php">
                     <input type="text" placeholder="Search.." name="search" />
                     <button type="submit"><i class="fa fa-search"></i></button>
                 </form>
-            </div> -->
+            </div>
 
-<!-- Navigatation -->
+            <!-- Navigatation -->
             <div class="containter-fluid background-nav">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="navigation">
                             <nav class="nav justify-content-center">
-                                <a class="nav-link active" href="#">Home</a>
+                                <a class="nav-link" href="#">Home</a>
                                 <a class="nav-link" href="#">Playstation</a>
                                 <a class="nav-link" href="#">XBox</a>
                                 <a class="nav-link" href="#">Nintendo</a>
@@ -91,69 +119,67 @@
                 </div>
             </div> <!-- closes background-nav -->
 
-<!-- Main Page Body -->
+            <!-- Main Page Body -->
             <div class="wrapper-main">
-<br />
+                <br />
                 <div class="container-fluid" id="welcome">
                     <div class="row">
                         <div class="col-md-1">
-                            <span class="fa fa-users"></span>
+                            <span class="fa fa-user-check"></span>
                         </div>
+
+                        <!-- REACT SECTION STARTS -->
                         <div class="col-md-11">
-                            <p id="intro">Welcome to Comet, the Indie Gaming Forum! If this is your first visit, please
-                                be sure to
-                                check out the FAQ by clicking the link above. You have to be registered in order to
-                                post or
-                                comment in the forums. And, it's FREE!</p>
+                            <p id="intro">Welcome to Comet, and thank you for registering and joining us! We are glad
+                                you are here. We'd love to know what you think of our forum. Click to let us know how
+                                you feel about our site:&nbsp; &nbsp;
+                                <span id="like_button_container" class="far fa-thumbs-up"></span> &nbsp; &nbsp;
+                                <!-- may add dislike button later -->
+                                <span id="dislike_button_container" class="far fa-thumbs-down"></span>
+                            </p>
                         </div>
+                        <!-- REACT SECTION ENDS -->
+
                     </div>
                 </div>
-<br />
+                <br />
                 <div class="container-fluid" id="discussion">
                     <div class="row" id="main">
 
-        <!-- Left Hand Side [non chat] -->
+                        <!-- Left Hand Side [non chat] -->
                         <div class="col-md-8" id="discussion">
+
                             <table class="table">
                                 <thead class="thead">
                                     <tr>
-                                        <th scope="col" style="width: 50%"><span class="far fa-comments"></span>&nbsp;
-                                            DISCUSSIONS</th>
-                                        <th scope="col" style="width: 15%">TOPICS</th>
-                                        <th scope="col" style="width: 15%">POSTS</th>
-                                        <th scope="col" style="width: 20%">LATEST POST</th>
+                                        <th scope="col" style="width: 100%"><span class="far fa-comments"></span>&nbsp;
+                                            DISCUSSIONS &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TOPICS &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; POSTS &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LATEST POST </th>
+                                        <th></th>
+                                        <th></th>
+                                        <th></th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <div>
-                                                <th scope="row">
-                                                        <h5><span class="fab fa-playstation"></span>&nbsp; <a href="javascript:;" target="_blank"
-                                                                class="titlelinks" value = "Rawring">Indie Gaming on Playstation</a></h5>
-                                                        <p class="forumtags">Are you a big Playstation fan? Then this is the
-                                                            discussion for you! Share and comment about Indie games available for
-                                                            PS consoles.</p>
-
-                                                        <div id= "Pstation" class="aBox"></div>
-                                                    </th>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                
-                                        </div>
+                                        <th scope="row">
+                                            <h5><span class="fab fa-playstation"></span>&nbsp; <a href="javascript:;" target="_blank"
+                                                    class="titlelinks">Indie Gaming on Playstation</a></h5>
+                                            <p class="forumtags">Are you a big Playstation fan? Then this is the
+                                                discussion for you! Share and comment about Indie games available for
+                                                PS consoles.</p>
+                                            <div id= "Pstation" class ="aBox"></div>
+                                        </th>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
                                     </tr>
-                                    
-                                    
-
                                     <tr>
                                         <th scope="row">
                                             <h5><span class="fab fa-xbox"></span>&nbsp; <a href="javascript:;" target="_blank"
-                                                    class="titlelinks" value = "1">Indie Gaming on Xbox</a></h5>
+                                                    class="titlelinks">Indie Gaming on Xbox</a></h5>
                                             <p class="forumtags">Are you more of an Xbox fan? Then drop in here to chat
                                                 about all things Xbox and Indie games available for the Xbox consoles.</p>
-                                                                                        <!-- <div class="row"> -->
                                             <div id= "Xbo" class ="aBox"></div>
-
                                         </th>
                                         <td></td>
                                         <td></td>
@@ -162,11 +188,10 @@
                                     <tr>
                                         <th scope="row">
                                             <h5><span class="fas fa-desktop"></span>&nbsp; <a href="javascript:;" target="_blank"
-                                                    class="titlelinks" value = "1">Indie Gaming on PC</a></h5>
+                                                    class="titlelinks">Indie Gaming on PC</a></h5>
                                             <p class="forumtags">Not a real console fan? Prefer your gaming on a PC or
                                                 Mac? Then check out this discussion for Indie games that can be played
                                                 on your PC or Mac.</p>
-
                                             <div id= "Masterrace" class ="aBox"></div>
                                         </th>
                                         <td></td>
@@ -176,11 +201,10 @@
                                     <tr>
                                         <th scope="row">
                                             <h5><span class="fab fa-nintendo-switch"></span>&nbsp; <a href="javascript:;" target="_blank"
-                                                    class="titlelinks" value = "1">Indie Gaming on Nintendo</a></h5>
+                                                    class="titlelinks">Indie Gaming on Nintendo</a></h5>
                                             <p class="forumtags">For those fans of Nintendo’s Switch or Wii, this is
                                                 your home! Check out the discussions for Indie games built for the
                                                 Nintendo systems.</p>
-
                                             <div id= "Ninpoke" class ="aBox"></div>
                                         </th>
                                         <td></td>
@@ -190,10 +214,9 @@
                                     <tr>
                                         <th scope="row">
                                             <h5><span class="far fa-newspaper"></span>&nbsp; <a href="javascript:;" target="_blank"
-                                                    class="titlelinks" value = "1">Indie Gaming News</a></h5>
+                                                    class="titlelinks">Indie Gaming News</a></h5>
                                             <p class="forumtags">Check out this discussion for official news,
                                                 announcements and game releases.</p>
-
                                             <div id= "Newing" class ="aBox"></div>
                                         </th>
                                         <td></td>
@@ -202,12 +225,11 @@
                                     </tr>
                                     <tr>
                                         <th scope="row">
-                                            <h5><span class="fas fa-clipboard-list"></span>&nbsp; <a href="#" target="_blank"
+                                            <h5><span class="fas fa-clipboard-list"></span>&nbsp; <a href="javascript:;" target="_blank"
                                                     class="titlelinks">Indie Games Reviews</a></h5>
                                             <p class="forumtags">Want to see what other members think about their Indie
                                                 game? Would you like to share a review of an Indie game you’ve played?
-                                                Then head over to check out the reviews.</p>
-
+                                                Then head over to check out the reviews.</p>    
                                             <div id= "Critics" class ="aBox"></div>
                                         </th>
                                         <td></td>
@@ -216,15 +238,15 @@
                                     </tr>
                                 </tbody>
                             </table>
-                            <!-- ********************************************************************************* -->
+
                             <table class="table">
                                 <thead class="thead">
                                     <tr>
-                                        <th scope="col" style="width: 50%"><span class="fas fa-bullhorn"></span>&nbsp;
-                                            RULES AND QUESTIONS</th>
-                                        <th scope="col" style="width: 15%">TOPICS</th>
-                                        <th scope="col" style="width: 15%">POSTS</th>
-                                        <th scope="col" style="width: 20%">LATEST POST</th>
+                                        <th scope="col" style="width: 100%"><span class="far fa-comments"></span>&nbsp;
+                                            RULES & QUESTIONS &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TOPICS &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;POSTS &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LATEST POST </th>
+                                        <th></th>
+                                        <th></th>
+                                        <th></th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -257,11 +279,11 @@
                             <table class="table">
                                 <thead class="thead">
                                     <tr>
-                                        <th scope="col" style="width: 50%"><span class="fas fa-file-archive"></span>&nbsp;
-                                            ARCHIVES</th>
-                                        <th scope="col" style="width: 15%">TOPICS</th>
-                                        <th scope="col" style="width: 15%">POSTS</th>
-                                        <th scope="col" style="width: 20%">LATEST POST</th>
+                                        <th scope="col" style="width: 100%"><span class="far fa-comments"></span>&nbsp;
+                                            ARCHIVES &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TOPICS &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; POSTS &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LATEST POST </th>
+                                        <th></th>
+                                        <th></th>
+                                        <th></th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -273,7 +295,6 @@
                                             <p class="forumtags">Looking for something from the past? Want to see old
                                                 posts about Indie games that might have been archived? Then head over
                                                 to check out our dusty files.</p>
-                                                <div id="Derpa"></div>
                                         </th>
                                         <td></td>
                                         <td></td>
@@ -283,82 +304,84 @@
                             </table>
                         </div> <!-- closes this left column -->
 
-        <!-- Right Hand Side [chat] -->
+                        <!-- Right Hand Side [chat] -->
 
                         <div class="col-md-4 rightside">
-                    <!-- BLOG SECTION -->
-                    <div class="button-group">
-                            <table class="optiontable">
-                            <tr>
-                                <div class="col-md-12">
-                                    <div>
-                                        <button id="newblogbtn" type="button"  class="btn">+Add New Post</button>
-                                    </div>
-                                </div>
-                            </tr>
-                            <br>
-                            <tr>
-                                <div class="col-md-12  blog-content">
-                                    <form id="blog">
-                                            <label for="discussion">Discussion:</label><div class="form-group">
-                                            <select name="discussions" class="form-controlDropDown" id="arguments">
-                                                <option id= "PS" value="Indie Gaming on Playstation">Indie Gaming on Playstation</option>
-                                                <option id = "XB" value="Indie Gaming on Xbox">Indie Gaming on Xbox</option>
-                                                <option id = "PC" value="Indie Gaming on PC">Indie Gaming on PC</option>
-                                                <option id = "Nin" value="Indie Gaming on Nintendo">Indie Gaming on Nintendo</option>
-                                                <option id = "News" value="Indie Gaming on News">Indie Gaming on News</option>
-                                            </select>
-                                            <br>
-                                            <label for="title">Topic:</label>
-                                            <input type="text" class="form-control" id="title">
-                                            <br/>
-                                            <label for="body">Your Post</label>
-                                            <textarea class="form-control" rows="3" id="formbody"></textarea>
-                                            <br />
-                                            <button type="submit" class="btn btn-success submit btn-sm" id= "newblogsubmitbtn">Submit</button>
+                            <!-- BLOG SECTION -->
+                            <div class="button-group">
+                                <table class="optiontable">
+                                    <tr>
+                                        <div class="col-md-12">
+                                            <div>
+                                                <button id="newblogbtn" type="button" class="btn">+Add New Post</button>
+                                            </div>
                                         </div>
-                                    </form>
-                                </div>
-                            </tr>
-                            </table>                                                                                                                   
-                        </div>
+                                    </tr>
+                                    <br>
+                                    <tr>
+                                        <div class="col-md-12  blog-content">
+                                            <form id="blog">
+                                                <label for="discussion">Discussion:</label>
+                                                <div class="form-group">
+                                                    <select name="discussions" class="form-controlDropDown" id="arguments">
+                                                        <option value="Indie Gaming on Playstation">Indie Gaming on
+                                                            Playstation</option>
+                                                        <option value="Indie Gaming on Xbox">Indie Gaming on Xbox</option>
+                                                        <option value="Indie Gaming on PC">Indie Gaming on PC</option>
+                                                        <option value="Indie Gaming on Nintendo">Indie Gaming on
+                                                            Nintendo</option>
+                                                        <option value="Indie Gaming News">Indie Gaming News</option>
+                                                        <option value="Indie Gaming Reviews">Indie Gaming Reviews</option>
+                                                    </select>
+                                                    <br /><br />
+                                                    <label for="title">Topic:</label>
+                                                    <input type="text" class="form-control" id="title">
+                                                    <br /><br /><br />
+                                                    <label for="body">Your Post:</label>
+                                                    <textarea class="form-control" rows="3" id="formbody"></textarea>
+                                                    <br />
+                                                    <button type="submit" class="btn btn-success submit btn-sm" id="newblogsubmitbtn">Submit</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </tr>
+                                </table>
+                            </div>
 
-                    <!-- CHAT PLACEHOLDER TO BE REMOVED -->
+                            <!-- CHAT PLACEHOLDER TO BE REMOVED -->
 
                             <div class="card">
-                                <img class="card-img-top" src="../assets/images/chat.jpg" alt="Card image cap">
+                                <img class="card-img-top" src="assets/images/chat.jpg" alt="Card image cap">
                                 <div class="card-body">
                                     <h5 class="card-title">CHAT</h5>
-                                    <p class="card-text">This is the chat window to be added.</p>
-                                    <p class="card-text">This window can be increased in size as needed.</p>
-                                    <p class="card-text">This chat section will be updated.</p>
-                                    <p class="card-text"><small class="text-muted">This is just a placeholder until the
-                                            back end chat code is ready for import.</small></p>
+                                    <p class="card-text">This will be online soon!</p>
+                                    <p class="card-text">Please read and post in our forum in the meantime.</p>
+                                    <img id="fakechat" src="assets/images/chat.png" />
                                 </div>
                             </div>
 
-                    <!-- END CHAT PLACEHOLDER THAT NEEDS TO BE REMOVED -->
+                            <!-- END CHAT PLACEHOLDER THAT NEEDS TO BE REMOVED -->
 
-<br /><br />
+                            <br /><br />
                             <div class="reviews">
                                 <p class="popular">CHECK OUT THESE POPULAR GAMES</p>
                                 <a href="http://larian.com/" target="_blank">
-                                    <img class="image-link" src="../assets/images/gameimage.jpg" />
+                                    <img class="image-link" src="assets/images/gameimage.jpg" />
                                     <p class="namelabel">Divinity: Original Sin 2</p>
                                 </a>
                                 <br />
                                 <a href="https://mojang.com/" target="_blank">
-                                    <img class="image-link" src="../assets/images/gameimage2.jpg" />
+                                    <img class="image-link" src="assets/images/gameimage2.jpg" />
                                     <p class="namelabel">Minecraft</p>
                                 </a>
                                 <br />
                                 <a href="http://braid-game.com/" target="_blank">
-                                    <img class="image-link" src="../assets/images/gameimage3.jpg" />
+                                    <img class="image-link" src="assets/images/gameimage3.jpg" />
                                     <p class="namelabel">Braid</p>
                                 </a>
                                 <br />
-                                <a href="http://http://hypetraindigital.com/the-wild-eight-coming-soon//" target="_blank">
-                                    <img class="image-link" src="../assets/images/gameimage4.jpg" />
+                                <a href="http://hypetraindigital.com/the-wild-eight-coming-soon/" target="_blank">
+                                    <img class="image-link" src="assets/images/gameimage4.jpg" />
                                     <p class="namelabel">The Wild Eight</p>
                                 </a>
                                 <br />
@@ -370,78 +393,75 @@
                     </div><!-- closes main row -->
                 </div> <!-- closes container discussion -->
             </div> <!-- closes wrapper-main -->
-<br />
-<hr id="line" />
+            <br />
+            <hr id="line" />
 
-<!-- footer info -->
-    <footer class="footer">
-            <div class="container">
-                <div class="row">
-                    <p class="footer">
-                        <div class="col-md-2">
-                            <img class="logofoot" src="assets/images/logofoot.png" />
-                        </div>
-                        <div class="col-md-10 footinfo">
-                            <br />
-                            <a class="shading" href="#">About Us</a>
-                            &nbsp;|&nbsp;
-                            <a class="shading" href="#" target="_blank">Advertise</a>
-                            &nbsp;|&nbsp;
-                            <a class="shading" href="#">Terms of Use</a>
-                            &nbsp;|&nbsp;
-                            <a class="shading" href="#" target="_blank">Privacy</a>
-                            &nbsp;|&nbsp;
-                            <a class="shading" href="#">Contact Us</a>
+            <!-- footer info -->
+            <footer class="footer">
+                <div class="container">
+                    <div class="row">
+                        <p class="footer">
+                            <div class="col-md-2">
+                                <img class="logofoot" src="assets/images/logofoot.png" />
+                            </div>
+                            <div class="col-md-10 footinfo">
+                                <br />
+                                <a class="shading" href="#">About Us</a>
+                                &nbsp;|&nbsp;
+                                <a class="shading" href="#" target="_blank">Advertise</a>
+                                &nbsp;|&nbsp;
+                                <a class="shading" href="#">Terms of Use</a>
+                                &nbsp;|&nbsp;
+                                <a class="shading" href="#" target="_blank">Privacy</a>
+                                &nbsp;|&nbsp;
+                                <a class="shading" href="#">Contact Us</a>
 
-                            <br /><br />
+                                <br /><br />
 
-                            <!-- font awesome social button icons -->
-                            <p id="share">SHARE THIS PAGE<br />
-                                <span class="social-icons">
-                                    <a href="#" target="_blank" class="fab fa-facebook">
-                                    </a>
-                                </span>
-                                <span class="social-icons">
-                                    <a href="#" target="_blank" class="fab fa-twitter">
-                                    </a>
-                                </span>
-                                <span class="social-icons">
-                                    <a href="#" target="_blank" class="fab fa-reddit">
-                                    </a>
-                                </span>
-                                <span class="social-icons">
-                                    <a href="#" target="_blank" class="fab fa-pinterest">
-                                    </a>
-                                </span>
-                                <span class="social-icons">
-                                    <a href="#" target="_blank" class="fab fa-instagram">
-                                    </a>
-                                </span></p>
+                                <!-- font awesome social button icons -->
+                                <p id="share">SHARE THIS PAGE<br />
+                                    <span class="social-icons">
+                                        <a href="#" target="_blank" class="fab fa-facebook">
+                                        </a>
+                                    </span>
+                                    <span class="social-icons">
+                                        <a href="#" target="_blank" class="fab fa-twitter">
+                                        </a>
+                                    </span>
+                                    <span class="social-icons">
+                                        <a href="#" target="_blank" class="fab fa-reddit">
+                                        </a>
+                                    </span>
+                                    <span class="social-icons">
+                                        <a href="#" target="_blank" class="fab fa-pinterest">
+                                        </a>
+                                    </span>
+                                    <span class="social-icons">
+                                        <a href="#" target="_blank" class="fab fa-instagram">
+                                        </a>
+                                    </span></p>
 
-                            <span id="copyright">Copyright &#169; 2018</span>
+                                <span id="copyright">Copyright &#169; 2018</span>
 
-                            <br />
-                    </p>
+                                <br />
+                        </p>
+                    </div>
                 </div>
-            </div>
 
-    </footer>
-    <!-- script for javascript-->
-    <!-- script for javascript-->
-    <!-- <script type="text/javascript" src="assets/js/main.js"></script> -->
-    
-    <script type="text/javascript" src="assets/js/login.js"></script>
-    <script type="text/javascript" src="assets/js/signup.js"></script>
-    <script type="text/javascript" src="assets/js/members.js"></script>
-    <script type="text/javascript" src="assets/js/post.js"></script>
-    
-    
-    
-    <!-- link to css -->
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/styleAuth.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/stylemembers.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/styleBlog.css" />
-</div> <!-- closes original container fluid  -->
+            </footer>
+            <!-- script for javascript-->
+            <!-- script for javascript-->
+            <!-- <script type="text/javascript" src="assets/js/main.js"></script> -->
+            <script type="text/javascript" src="assets/js/login.js"></script>
+            <script type="text/javascript" src="assets/js/signup.js"></script>
+            <script type="text/javascript" src="assets/js/members.js"></script>
+            <script type="text/javascript" src="assets/js/post.js"></script>
+            <!-- link to css -->
+            <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+            <link rel="stylesheet" type="text/css" media="screen" href="assets/css/styleAuth.css" />
+            <link rel="stylesheet" type="text/css" media="screen" href="assets/css/stylemembers.css" />
+            <link rel="stylesheet" type="text/css" media="screen" href="assets/css/styleBlog.css" />
+        </div> <!-- closes original container fluid  -->
 </body>
+
 </html>

@@ -148,6 +148,7 @@ app.put("/api/posts", function(req, res) {
     });
 });
 
+
 app.post("/api/derps", function(req, res) {
   
   db.Derp.create({
@@ -208,7 +209,5 @@ app.put("/api/derps", function(req, res) {
       res.json(dbDerp);
     });
 });
-
-
 
 };

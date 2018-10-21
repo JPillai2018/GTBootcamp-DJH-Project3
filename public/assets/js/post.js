@@ -1,8 +1,29 @@
 $(document).ready(function() {
-
+    var submitted = false;
     
     $("#newblogsubmitbtn").on("click", function(event) {
         event.preventDefault();
+
+        if (submitted === false) {
+
+            var thread = $("#arguments option:selected").val().trim();
+            var topic = $("#title").val().trim();
+            var post = $("#formbody").val().trim();
+        
+
+             var derps = {
+                 thread,
+                 topic,
+                 post,   
+             };
+             console.log("clicked");
+             console.log(derps)
+             $.post("api/derps", derps)
+             .then(function(){   
+             document.getElementById("blog").reset();
+            })
+
+        } else {
                 
         var thread = $("#arguments option:selected").val().trim();
         var topic = $("#title").val().trim();
@@ -18,19 +39,12 @@ $(document).ready(function() {
              console.log(derps)
              $.post("api/derps", derps)
              .then(function(){
-                
-             document.getElementById("blog").reset();
+              createNewRow()   
+              document.getElementById("blog").reset();
             })
+        }
                    
     });
-
-    function naming () {
-        $(".named").empty();
-        $.get("/api/user_data").then(function(data) {
-        mName = $("<h5> User: " + data.fname + "</h5>");
-        $(".named").prepend(mName);
-        });
-    };
 
     function createNewRow() {
         $("#Masterrace").empty();
@@ -38,7 +52,7 @@ $(document).ready(function() {
         $("#Pstation").empty();
         $("#Ninpoke").empty();
         $("#Newing").empty();
-        
+        $(".named").empty();
 
         $.get("/api/derps", function(post) {
             for (i = 0; i < post.length; i++) {
@@ -53,6 +67,10 @@ $(document).ready(function() {
                 var newPostCategory = $("<h5>").data(post[i].category);
                 var newPostCardBody = $("<div>");
                 var newPostBody = $("<p class='forumtags'>").text(post[i].post);
+                var formattedDate = new Date(post[i].createdAt);
+                //formattedDate = moment(formattedDate).format("MMMM Do YYYY, h:mm:ss a");
+                formattedDate = moment(formattedDate).format("lll");
+                newPostTitle.append(newPostDate);
     
                  newPostTitle.append(newPostDate);
                  newPostCardHeading.append(deleteBtn);
@@ -90,7 +108,10 @@ $(document).ready(function() {
                
                 
             }
-            naming();
+            $.get("/api/user_data").then(function(data) {
+                mName = $("<h5> User: " + data.fname + " posted this on " + formattedDate + "</h5>");
+                $(".named").prepend(mName);
+            });
             
         });
 
@@ -124,7 +145,18 @@ $(document).ready(function() {
     $(".titlelinks").on("click", function() {
         console.log("I've been clicked!");
         console.log(this.value);
-        
+        if (submitted === false) {
+        submitted = true;
+        createNewRow()
+        } else {
+        submitted = false;
+        $("#Masterrace").empty();
+        $("#Xbo").empty();
+        $("#Pstation").empty();
+        $("#Ninpoke").empty();
+        $("#Newing").empty();
+        $(".named").empty();
+        } 
         if (this.value === 1) {
             console.log("Nuuuu!")
             this.value === 0;
@@ -142,15 +174,4 @@ $(document).ready(function() {
 
     //$(document).on("click", "button.edit", handlePostEdit);
     
-    
-            
-        
-
-    
-
-
-    
-
-  
-    
-})
+})    
