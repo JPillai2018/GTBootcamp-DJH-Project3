@@ -149,5 +149,66 @@ app.put("/api/posts", function(req, res) {
 });
 
 
+app.post("/api/derps", function(req, res) {
+  
+  db.Derp.create({
+    thread: req.body.thread,
+    topic: req.body.topic,
+    post: req.body.post,
+    name: req.body.name,
+    
+  })
+    .then(function(dbDerp) {
+      res.json(dbDerp);
+    });
+});
+app.get("/api/derps/", function(req, res) {
+  db.Derp.findAll({
+  
+  }).then(function(dbDerp) {
+      res.json(dbDerp);
+    });
+});
+app.get("/api/derps/thread/:thread", function(req, res) {
+  db.Derp.findAll({
+    where: {
+      thread: req.params.thread
+    }
+  })
+    .then(function(dbDerp) {
+      res.json(dbDerp);
+    });
+});
+app.get("/api/derps/:id", function(req, res) {
+  db.Derp.findOne({
+    where: {
+      id: req.params.id
+    }
+  })
+    .then(function(dbDerp) {
+      res.json(dbDerp);
+    });
+});
+app.delete("/api/derps/:id", function(req, res) {
+  db.Derp.destroy({
+    where: {
+      id: req.params.id
+    }
+  })
+    .then(function(dbDerp) {
+      res.json(dbDerp);
+    });
+});
+app.put("/api/derps", function(req, res) {
+  db.Derp.update(req.body,
+    {
+      where: {
+        id: req.body.id
+      }
+    })
+    .then(function(dbDerp) {
+      res.json(dbDerp);
+    });
+});
 
 };
