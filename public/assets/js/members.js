@@ -4,5 +4,6 @@ $(document).ready(function() {
   $.get("/api/user_data").then(function(data) {
     $('#myModal').modal('show');
     $(".member-name").text(data.fname);
+    localStorage.setItem("UserName", data.fname);
   });
 });

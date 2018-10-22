@@ -22,7 +22,12 @@ module.exports = function(sequelize, DataTypes) {
       category: {
         type: DataTypes.STRING,
         defaultValue: "Personal"
+      },
+      name: {
+        type: DataTypes.STRING,
+
       }
+      
     });
     return Derp;
 };

@@ -155,6 +155,7 @@ app.post("/api/derps", function(req, res) {
     thread: req.body.thread,
     topic: req.body.topic,
     post: req.body.post,
+    name: req.body.name,
     
   })
     .then(function(dbDerp) {

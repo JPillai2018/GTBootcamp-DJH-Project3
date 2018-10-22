@@ -1,23 +1,26 @@
 $(document).ready(function() {
     var submitted = false;
-    
+    var name = "";
+    var firstName = localStorage.getItem("UserName");
+    console.log(firstName)
+
     $("#newblogsubmitbtn").on("click", function(event) {
         event.preventDefault();
-
+               
         if (submitted === false) {
 
             var thread = $("#arguments option:selected").val().trim();
             var topic = $("#title").val().trim();
             var post = $("#formbody").val().trim();
-        
+            var name = firstName;
 
              var derps = {
                  thread,
                  topic,
-                 post,   
+                 post,
+                 name,   
              };
-             console.log("clicked");
-             console.log(derps)
+             
              $.post("api/derps", derps)
              .then(function(){   
              document.getElementById("blog").reset();
@@ -28,15 +31,15 @@ $(document).ready(function() {
         var thread = $("#arguments option:selected").val().trim();
         var topic = $("#title").val().trim();
         var post = $("#formbody").val().trim();
-        
+        var name = firstName; 
 
              var derps = {
                  thread,
                  topic,
-                 post,   
+                 post, 
+                 name,
              };
-             console.log("clicked");
-             console.log(derps)
+           
              $.post("api/derps", derps)
              .then(function(){
               createNewRow()   
@@ -52,14 +55,16 @@ $(document).ready(function() {
         $("#Pstation").empty();
         $("#Ninpoke").empty();
         $("#Newing").empty();
-        $(".named").empty();
-
+        
+   
         $.get("/api/derps", function(post) {
+
             for (i = 0; i < post.length; i++) {
-                console.log(post);
+                $(".named").empty();
+                
+               
                 var newPostCard = $("<div>").data("id", post[i].id);
                 var newPostCardHeading = $("<div>");
-                var newName = $("<div class= 'named'>");
                 var deleteBtn = $("<button class = 'delete btn btn-danger'>").text("x");
                 //var editBtn = $("<button class = 'edit btn btn-default'>").text("Edit");
                 var newPostTitle = $("<h4>").text(post[i].topic);
@@ -68,10 +73,11 @@ $(document).ready(function() {
                 var newPostCardBody = $("<div>");
                 var newPostBody = $("<p class='forumtags'>").text(post[i].post);
                 var formattedDate = new Date(post[i].createdAt);
-                //formattedDate = moment(formattedDate).format("MMMM Do YYYY, h:mm:ss a");
+                var newName = $("<h5> User: " + post[i].name + " posted this on " + formattedDate + "</h5>");
+                
+
                 formattedDate = moment(formattedDate).format("lll");
                 newPostTitle.append(newPostDate);
-    
                  newPostTitle.append(newPostDate);
                  newPostCardHeading.append(deleteBtn);
                  //newPostCardHeading.append(editBtn);
@@ -83,7 +89,8 @@ $(document).ready(function() {
                  newPostCard.append(newPostCardBody);
                  newPostCard.prepend(newName);
                  
-    
+                 
+                 
                  
                  switch(post[i].thread)
                  {
@@ -103,18 +110,11 @@ $(document).ready(function() {
                      $("#Newing").prepend(newPostCard);
                      break;
                  }
-
-                 
-               
-                
+   
             }
-            $.get("/api/user_data").then(function(data) {
-                mName = $("<h5> User: " + data.fname + " posted this on " + formattedDate + "</h5>");
-                $(".named").prepend(mName);
-            });
-            
+                    
         });
-
+            
     }
 
     
@@ -144,7 +144,6 @@ $(document).ready(function() {
 
     $(".titlelinks").on("click", function() {
         console.log("I've been clicked!");
-        console.log(this.value);
         if (submitted === false) {
         submitted = true;
         createNewRow()
@@ -157,18 +156,6 @@ $(document).ready(function() {
         $("#Newing").empty();
         $(".named").empty();
         } 
-        if (this.value === 1) {
-            console.log("Nuuuu!")
-            this.value === 0;
-            createNewRow();
-        } else {
-            this.value === 1;
-            $("#Masterrace").empty();
-            $("#Xbo").empty();
-            $("#Pstation").empty();
-            $("#Ninpoke").empty();
-            $("#Newing").empty();
-        }
     });
 
 
