@@ -60,7 +60,16 @@ $(document).ready(function() {
    
         $.get("/api/derps", function(post) {
 
+            var postings = [];
+            
             for (i = 0; i < post.length; i++) {
+
+                
+                
+                console.log(postings);
+                
+                
+
                 $(".named").empty();
                 
                
@@ -69,14 +78,26 @@ $(document).ready(function() {
                 var deleteBtn = $("<button class = 'delete btn'>").text("x");
                 var breaks = $("<br>");
                 //var editBtn = $("<button class = 'edit btn btn-default'>").text("Edit");
-                var newPostTopic = $("<h5 style= 'color: #007bff;'>").text("Topic: " + post[i].topic);
+                var newPostTopic = $("<h5 style= 'color: #003366;'>").text("Topic: " + post[i].topic);
                 var newPostCategory = $("<h5>").data(post[i].category);
                 var newPostCardBody = $("<div>");
                 var newPostBody = $("<p class='forumtags'>").text(post[i].post);
                 var formattedDate = new Date(post[i].createdAt);
                 var newName = $("<h6> User: " + post[i].name + " posted this on " + formattedDate + "</h6>");
                 formattedDate = moment(formattedDate).format("LLLL");
-                
+
+                if (postings.includes(post[i].topic)) {
+
+                console.log("if");
+                newPostCardHeading.append(deleteBtn);
+                newPostCardHeading.append(newPostCategory);
+                newPostCardBody.append(newName);
+                newPostCardBody.append(newPostBody);
+                newPostCard.append(newPostCardHeading);
+                newPostCard.append(newPostCardBody); 
+                }
+                else {
+                console.log("else");
                 
                  newPostTopic.append(breaks);
                  newPostCardHeading.append(deleteBtn);
@@ -87,30 +108,30 @@ $(document).ready(function() {
                  newPostCardBody.append(newPostBody);
                  newPostCard.append(newPostCardHeading);
                  newPostCard.append(newPostCardBody);
-                 
-                 
+                 postings.push(post[i].topic);
+                }
                  
                  
                  
                  switch(post[i].thread)
                  {
                      case "Indie Gaming on PC":
-                     $("#Masterrace").prepend(newPostCard)
+                     $("#Masterrace").append(newPostCard)
                      break;
                      case "Indie Gaming on Xbox":
-                     $("#Xbo").prepend(newPostCard)
+                     $("#Xbo").append(newPostCard)
                      break;
                      case "Indie Gaming on Playstation":
-                     $("#Pstation").prepend(newPostCard)
+                     $("#Pstation").append(newPostCard)
                      break;
                      case "Indie Gaming on Nintendo":
-                     $("#Ninpoke").prepend(newPostCard)
+                     $("#Ninpoke").append(newPostCard)
                      break;
                      case "Indie Gaming Reviews":
-                     $("#Critics").prepend(newPostCard)
+                     $("#Critics").append(newPostCard)
                      break;
                      default:
-                     $("#Newing").prepend(newPostCard);
+                     $("#Newing").append(newPostCard);
                      break;
                  }
    
