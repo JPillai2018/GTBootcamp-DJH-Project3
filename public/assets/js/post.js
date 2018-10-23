@@ -66,29 +66,28 @@ $(document).ready(function() {
                
                 var newPostCard = $("<div>").data("id", post[i].id);
                 var newPostCardHeading = $("<div>");
-                var deleteBtn = $("<button class = 'delete btn btn-danger'>").text("x");
+                var deleteBtn = $("<button class = 'delete btn'>").text("x");
+                var breaks = $("<br>");
                 //var editBtn = $("<button class = 'edit btn btn-default'>").text("Edit");
-                var newPostTitle = $("<h4>").text(post[i].topic);
-                var newPostDate = $("<div>");
+                var newPostTopic = $("<h5 style= 'color: #007bff;'>").text("Topic: " + post[i].topic);
                 var newPostCategory = $("<h5>").data(post[i].category);
                 var newPostCardBody = $("<div>");
                 var newPostBody = $("<p class='forumtags'>").text(post[i].post);
                 var formattedDate = new Date(post[i].createdAt);
-                var newName = $("<h5> User: " + post[i].name + " posted this on " + formattedDate + "</h5>");
+                var newName = $("<h6> User: " + post[i].name + " posted this on " + formattedDate + "</h6>");
+                formattedDate = moment(formattedDate).format("LLLL");
                 
-
-                formattedDate = moment(formattedDate).format("lll");
-                newPostTitle.append(newPostDate);
-                 newPostTitle.append(newPostDate);
+                
+                 newPostTopic.append(breaks);
                  newPostCardHeading.append(deleteBtn);
                  //newPostCardHeading.append(editBtn);
-                 newPostCardHeading.append(newPostTitle);
+                 newPostCardHeading.append(newPostTopic);
                  newPostCardHeading.append(newPostCategory);
-                 newPostCardBody.append(newPostDate);
+                 newPostCardBody.append(newName);
                  newPostCardBody.append(newPostBody);
                  newPostCard.append(newPostCardHeading);
                  newPostCard.append(newPostCardBody);
-                 newPostCard.prepend(newName);
+                 
                  
                  
                  
