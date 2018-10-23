@@ -55,6 +55,7 @@ $(document).ready(function() {
         $("#Pstation").empty();
         $("#Ninpoke").empty();
         $("#Newing").empty();
+        $("#Critics").empty();
         
    
         $.get("/api/derps", function(post) {
@@ -106,6 +107,9 @@ $(document).ready(function() {
                      case "Indie Gaming on Nintendo":
                      $("#Ninpoke").prepend(newPostCard)
                      break;
+                     case "Indie Gaming Reviews":
+                     $("#Critics").prepend(newPostCard)
+                     break;
                      default:
                      $("#Newing").prepend(newPostCard);
                      break;
@@ -154,6 +158,7 @@ $(document).ready(function() {
         $("#Pstation").empty();
         $("#Ninpoke").empty();
         $("#Newing").empty();
+        $("#Critics").empty();
         $(".named").empty();
         } 
     });
