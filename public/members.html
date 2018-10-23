@@ -44,7 +44,7 @@
                 <div class="form-row align-items-right">
                     <div class="col">
                         <br /><br />
-                        <h4 id="welmem">Welcome <span class="member-name"></span></h4>
+                        <h4 id="welmem">Welcome <span id ="mem-name" class="member-name"></span></h4>
                     </div>
                     <div class="col">
                         <div class="col-md-8  block">
@@ -462,6 +462,13 @@
             <link rel="stylesheet" type="text/css" media="screen" href="assets/css/stylemembers.css" />
             <link rel="stylesheet" type="text/css" media="screen" href="assets/css/styleBlog.css" />
         </div> <!-- closes original container fluid  -->
+
+            <!-- Load React. -->
+            <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+            <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+            <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+             <!-- Load our React component. -->
+            <script src="like_button.js"></script>
 </body>
 
 </html>
